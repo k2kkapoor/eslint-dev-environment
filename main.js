@@ -1,45 +1,45 @@
 const budget = {
     myBudget: [
         {
-            title: 'Phone',
+            title: "Phone",
             budget: 35
         },
         {
-            title: 'Internet',
+            title: "Internet",
             budget: 45
         },
         {
-            title: 'Education',
+            title: "Education",
             budget: 80
         },
         {
-            title: 'Eat out',
+            title: "Eat out",
             budget: 25
         },
         {
-            title: 'Rent',
+            title: "Rent",
             budget: 275
         },
         {
-            title: 'Grocery',
+            title: "Grocery",
             budget: 110
         },
         {
-            title: 'Pharmacy',
+            title: "Pharmacy",
             budget: 40
         },
         {
-            title: 'Donations',
+            title: "Donations",
             budget: 10
         },
     ]
 };
 
 function generateTable(b) {
-    const p = document.getElementById('list');
-    p.innerHTML = '';
+    const p = document.getElementById("list");
+    p.innerHTML = "";
     for (var i = 0; i < b.length; i++) {
-        const div = document.createElement('div');
+        const div = document.createElement("div");
         div.innerHTML = `${b[i].title} - ${b[i].budget}`;
         p.appendChild(div);
     }
